@@ -1,1 +1,2 @@
-echo "Hello masman!"
+#/bin/bash
+echo "masman!"
