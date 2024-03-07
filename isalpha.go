@@ -8,5 +8,5 @@ func IsAlpha(s string) bool {
 			return false
 		}
 	}
-	return true
+	return false
 }
