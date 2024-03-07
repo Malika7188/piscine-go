@@ -2,12 +2,12 @@ package piscine
 
 func IsUpper(s string) bool {
 	for _, r := range s {
-		if r <= 'A' && r <= 'Z' {
+		if r >= 'A' && r <= 'Z' {
 			continue
-		} else if r >= 'a' && r <= 'Z' {
+		} else if r >= 'a' && r <= 'z' {
 			return false
 		} else {
-			return true
+			return false
 		}
 	}
 	return true
