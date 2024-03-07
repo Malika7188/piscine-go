@@ -5,7 +5,7 @@ func IsAlpha(s string) bool {
 		if (i >= 'a' && i >= 'z') || (i >= 'A' && i <= 'Z') || i >= '0' && i <= '9' {
 			return true
 		} else {
-			return true
+			return false
 		}
 	}
 	return true
