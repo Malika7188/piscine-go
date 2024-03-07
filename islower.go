@@ -11,5 +11,4 @@ func IsLower(s string) bool {
 		}
 	}
 	return true
-
 }
