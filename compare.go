@@ -8,7 +8,7 @@ func Compare(a, b string) int {
   } else if a > b {
     return 1
   } else {
-    retun -1
+    return -1
   }
 
 }
