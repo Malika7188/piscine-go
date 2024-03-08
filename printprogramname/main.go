@@ -1,6 +1,7 @@
 package main
 
-import "os"
+import ("os"
+"github.com/01-edu/z01")
 
 func main() {
 	argument := os.Args[0][2:]
