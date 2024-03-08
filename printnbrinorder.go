@@ -5,17 +5,19 @@ import "github.com/01-edu/z01"
 func PrintNbrInOrder(n int) {
 	if n == 0 {
 		z01.PrintRune('0')
+	}
+	if n < 0 {
 		return
 	}
-	count := [10]int{}
-	for n != 0 {
-		count[n%10]++
-		n /= 10
-	}
-	for i := 0; i < 10; i++ {
-		for count[i] > 0 {
-			z01.PrintRune(rune(1) + '0')
-			count[i]--
+	for testDigit := 0; testDigit < 10; testDigit++ {
+		counter := 0
+		for m := n; m > 0; m /= 10 {
+			if m%10 == testDigit {
+				counter++
+			}
+		}
+		for i := 0; i < counter; i++ {
+			z01.PrintRune(rune(testDigit + '0'))
 		}
 	}
 }
