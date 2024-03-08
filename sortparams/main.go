@@ -11,7 +11,7 @@ func main() {
 	for i := 0; i < len(argument)-1; i++ {
 		for j := 0; j < len(argument)-i-1; j++ {
 			if argument[j] > argument[j+1] {
-				argument[j], argument[i] = argument[i], argument[j]
+				argument[j], argument[j+1] = argument[j+1], argument[j]
 			}
 		}
 	}
