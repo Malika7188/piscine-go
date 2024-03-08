@@ -18,5 +18,4 @@ func PrintNbrInOrder(n int) {
 			count[i]--
 		}
 	}
-
 }
