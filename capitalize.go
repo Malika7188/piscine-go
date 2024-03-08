@@ -4,7 +4,7 @@ func Capitalize(s string) string {
 	var capitalString string
 	capitalizerFlag := true
 	for _, value := range s {
-		if (value >= 'a' && value <= 'z') || (value >= '0' && value <= '9') {
+		if (value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z') || (value >= '0' && value <= '9') {
 			if capitalizerFlag {
 				if value >= 'a' && value <= 'z' {
 					capitalString += string(value - 32)
