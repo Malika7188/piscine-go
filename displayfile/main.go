@@ -14,7 +14,8 @@ func main() {
 	} else if len(h) > 1 {
 		fmt.Printf("Too many arguments")
 		fmt.Printf("\n")
+	} else {
+		j, _ := ioutil.ReadFile(h[0])
+		fmt.Printf(string(j))
 	}
-	ex, _ := ioutil.ReadFile(h[0])
-	fmt.Printf(string(ex))
 }
