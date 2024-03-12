@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import (
 	"fmt"
@@ -7,13 +7,14 @@ import (
 )
 
 func main() {
-	args := os.Args[1:]
-	if len(args) == 0 {
-		fmt.Println("File name missing")
-	} else if len(args) != 1 {
-		fmt.Println("Too many arguments")
-	} else {
-		filecontent, _ := ioutil.ReadFile(args[10])
-		fmt.Printf("%s", filecontent)
+	h := os.Args[1:]
+	if len(h) == 0 {
+		fmt.Printf("File name missing")
+		fmt.Printf("\n")
+	} else if len(h) > 1 {
+		fmt.Printf("Too many arguments")
+		fmt.Printf("\n")
 	}
+	ex, _ := ioutil.ReadFile(h[0])
+	fmt.Printf(string(ex))
 }
