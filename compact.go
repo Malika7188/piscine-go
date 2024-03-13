@@ -5,10 +5,10 @@ func Compact(ptr *[]string) int {
 	count := 0
 	for _, ch := range *ptr {
 		if ch != "" {
-			n = append(n, ch)
+			n[count] = ch
 			count++
 		}
 	}
-	*ptr = n
+	*ptr = n[0:count]
 	return count
 }
