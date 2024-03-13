@@ -1,11 +1,15 @@
 package piscine
 
 func Unmatch(a []int) int {
-	s := make(map[int]bool)
-	for _, v := range a {
-		if !s[v] {
-			s[v] = true
-			return v
+	for _, res := range a {
+		test := 0
+		for _, el := range a {
+			if el == res {
+				test++
+			}
+		}
+		if test == 1 || test%2 == 1 {
+			return res
 		}
 	}
 	return -1
