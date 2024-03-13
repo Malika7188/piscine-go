@@ -6,8 +6,8 @@ func printer(s int) {
 	unit := s % 10
 	test := s / 10
 
-	z01.PrintRune(rune(unit) + '0')
 	z01.PrintRune(rune(test) + '0')
+	z01.PrintRune(rune(unit) + '0')
 }
 
 func DescendComb() {
@@ -22,4 +22,5 @@ func DescendComb() {
 			}
 		}
 	}
+	z01.PrintRune('\n')
 }
