@@ -1,9 +1,9 @@
 package piscine
 
 func PodiumPosition(podium [][]string) [][]string {
-	r := make([][]string, len(podium))
-	for i := len(podium); i >= 0; i++ {
-		r[len(podium)-1-i] = podium[i]
+	for i, j := 0, len(podium)-1; i < j; i, j = i+1, j-1 {
+		podium[i], podium[j] = podium[j], podium[i]
+
 	}
-	return r
+	return podium
 }
