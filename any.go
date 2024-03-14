@@ -5,5 +5,6 @@ func Any(f func(string) bool, a []string) bool {
 		if f(a[i]) {
 			return true
 		}
+	}
 	return false
 }
