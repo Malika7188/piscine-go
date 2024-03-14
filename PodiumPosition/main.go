@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	p4 := []string{"4th Place"}
 	p3 := []string{"3rd Place"}
 	p2 := []string{"2nd Place"}
