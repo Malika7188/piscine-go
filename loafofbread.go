@@ -12,6 +12,6 @@ func LoafOfBread(str string) string {
 			}
 		}
 	}
-	result += "\n"
+	result = "\n"
 	return result
 }
