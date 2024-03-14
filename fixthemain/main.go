@@ -33,7 +33,6 @@ func IsDoorClose(ptrDoor *Door) bool {
 
 func main() {
 	door := &Door{}
-
 	OpenDoor(door)
 	if IsDoorClose(door) {
 		OpenDoor(door)
