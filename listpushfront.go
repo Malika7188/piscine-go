@@ -1,12 +1,12 @@
 package piscine
 
 func ListPushFront(l *List, data interface{}) {
-	ch := &NodeL{Data: data}
+	char := &NodeL{Data: data}
 	if l.Head == nil {
-		l.Head = ch
-		l.Tail = ch
+		l.Head = char
+		l.Tail = char
 	} else {
-		l.Tail.Next = ch
-		l.Tail = ch
+		char.Next = l.Head
+		l.Tail = char
 	}
 }
