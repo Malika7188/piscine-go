@@ -13,5 +13,5 @@ func BTreeIsBinary(root *TreeNode) bool {
 	if !BTreeIsBinary(root.Right) || !BTreeIsBinary(root.Right) {
 		return false
 	}
-	return false
+	return true
 }
