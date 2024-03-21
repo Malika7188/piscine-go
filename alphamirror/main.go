@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+
 	"github.com/01-edu/z01"
 )
 
@@ -16,8 +17,6 @@ func main() {
 			}
 			z01.PrintRune(rune(arg[i]))
 		}
-		
 	}
-
 	z01.PrintRune('\n')
 }

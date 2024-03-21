@@ -11,5 +11,4 @@ func main() {
 	piscine.BTreeInsertData(root, "7")
 	piscine.BTreeInsertData(root, "5")
 	piscine.BTreeApplyPostorder(root, fmt.Println)
-
 }
